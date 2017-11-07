@@ -1,0 +1,47 @@
+/*CSS Properties 1: Colours*/
+.mystyle{
+  color:blue;
+}
+
+
+/*CSS Properties 2: Borders*/
+.mybstyle {
+  border: 2px solid Violet;
+}
+
+
+/*CSS Properties 3: Backgrounds*/
+.mybgstyle {
+  background-color: lightblue;
+}
+
+
+/*CSS Properties 3.1: Background Images*/
+.mybgistyle {
+  background-image: url("https://goo.gl/jcdXn2");
+}
+
+
+/*CSS Properties 4: Text*/
+.mytstyle {
+  text-align: center;
+  /*Many more!*/
+}
+
+
+/*CSS Properties 5: Fonts
+  There are 3 generic families:
+    Serif : Font-family: Times New Roman
+    Sans-Serif : Font-family: Arial
+    Monospace : Font-family: Courier New*/
+.myfstyle {
+  font-family: Arial, "Times New Roman", Times, serif;
+  /*Fallback if one isn't supported >>>>>
+  All browsers support Times New Roman*/
+}
+
+
+/*CSS Properties 5.1: Font Customisation*/
+.myfontstyle {
+  font: bold 15px arial, sans-serif;
+}
