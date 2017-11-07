@@ -1,3 +1,54 @@
 .headers {
   text-align:center;
 }
+
+.center {
+  text-align:center;
+}
+
+.navtable {
+  font-family: "Trebuchet MS", Arial;
+  border-collapse:collapse;
+}
+
+.navtable td, .navtable th {
+  border: 1px solid #5F8387;
+  padding:8px;
+}
+
+.navtable th {
+  color: white ;
+  background-color:#98A5A9;
+}
+
+.navtable tr:nth-child(even) {
+  background-color: #F5F5F5;
+}
+
+.navtable tr {
+  color: #000000;
+  text-align: center;
+}
+
+.navtable tr:hover {
+  background-color:#ddd;
+}
+
+a {
+    color: #3D3D3D;
+}
+
+a:hover {
+  color: #000000;
+}
+
+h2 {
+  color: white;
+  background-color: #3D3D3D;
+  padding: 8px;
+}
+
+h3 {
+  background-color: #DCDCDC;
+  padding: 6px;
+}
