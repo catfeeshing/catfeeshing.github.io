@@ -7,28 +7,40 @@
     <link href="html-reference.css" rel="stylesheet" type="text/css"/>
   </head>
   <body>
-    <h1 class="headers">What's HTML?</h1>
+    <nav>  
+     <ul>      
+          <a href="/index.html">⬅ Return to Homepage</a>
+     </ul>      
+</nav>
+    <h1 class="headers">HTML Reference Page</h1>
     <hr>
     <p>HTML, or Hypertext Markup Language, is a system you've seen everywhere without even knowing it.
     <br>
     It is used to spruce up almost all your favourite web pages. Through HTML, you can add colour, different fonts, and more to what would normally be a bland and unremarkable page.
     <br>
     
-    HTML can be used alongside CSS and Javascript, both of which are used to customise websites.</p>
+    HTML is often used alongside CSS and Javascript, both of which are used to customise websites.</p>
     <br><p style="text-align:center"><img src="https://www.w3.org/html/logo/downloads/HTML5_Logo_512.png" width=10% height=10%></p>
     <br>
    
     <p>At one point in your life, you've probably accidentally pressed on the F12 key on your keyboard. Then you see a bunch of gibberish appear: <br><br><img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/Html-source-code3.png"></p><p>What the heck does all of that mean?</p>
     <p>Let's talk about that.</p>
     
-    <table class="navtable" style="width:75%">
+    <table class="navtable" style="width:100%">
   <tr>
     <th><i>Name</i></th>
     <th><i>Start Tag</i></th> 
     <th><i>End Tag</i></th>
     <th><i>Example</i></th>
   </tr>
-
+  
+  <tr>
+    <td><b><a href=#html>HTML</a></b></td>
+    <td>&lt;html><i>[EVERYTHING! after !doctype html]</i></td>
+    <td>&lt;/html></td>
+    <td>Can't really show. Everything below goes under the &lt;html> tag.</td>
+  </tr>
+  
   <tr>
     <td><b><a href=#head>Head</a></b></td>
     <td>&lt;head&gt;<i>[stuff code you can't see here(including styles); body comes right after head]</i></td> 
@@ -36,6 +48,8 @@
     <td>Can't really show.</td>
   </tr>
   
+
+    
     <tr>
     <td><b><a href=#title>Title</a></b></td>
     <td>&lt;title&gt;<i>[this is the text that will appear as the title in the physical tab]</i></td> 
@@ -124,188 +138,229 @@
     <td>Here.<div>There.</div><div style="color:blue;">Boom. Div.</div></td>
 </table>
 
-    <h2 id="head">Head Element</h2>
+
+    <h2 id="html">HTML Element</h2>  <div>
+    <h3>The HTML element tells the browser that the document is a HTML document.
+    <br><br>
+    Location: Right after the &lt;!doctype html> tag. The very last line in a HTML document.</h3>
+    <p>This tag represents the root of a HTML doc. It should contain <i>everything</i> except for the &lt;!doctype html> tag. Basically, this should be your second line of code, the first being your &lt;!doctype html> tag.</p>
+    <h3 id="syn">Syntax</h3>
+    <p>&lt;html>[ALMSOT EVEYRTHING!]&lt;/html></p>
+    <h3 id="ex">Example</h3>
+    <p><img src="/images/BodyExample.png"></p>
+    <h3 id="dis">Display</h3>
+    <p><img src="/images/BodyDisplay.png"></p>
+    <h4><a href="https://www.w3schools.com/tags/tag_html.asp">W3 Schools Link</a></h4>
+    <br><br>
+  </div>
+
+
+    <h2 id="head">Head Element</h2>  <div>
     <h3>The head element is a container for metadata (data about data).
     <br><br>
     Location: Between the &lt;html> and &lt;body> tags.</h3>
     <p>Metadata is code that isn't explicitly displayed. It will alter your web page but the only way to really see the code itself is to view the page's source code. Examples of metadata include the web page title, styles, links, and scripts.</p>
-    <h3>Syntax</h3>
+    <h3 id="syn">Syntax</h3>
     <p>&lt;head>[moitadoita!]&lt;/head></p>
-    <h3>Example</h3>
+    <h3 id="ex">Example</h3>
     <p><img src="/images/HeadExample.png"></p>
-    <h3>Display</h3>
+    <h3 id="dis">Display</h3>
     <p><img src="/images/HeadDisplay.png"></p>
-    <h3><a href=https://www.w3schools.com/html/html_head.asp>W3 Schools Link</a></h3>
-    <hr>
+    <h4><a href=https://www.w3schools.com/html/html_head.asp>W3 Schools Link</a></h4>
+    <br><br>
+  </div>
 
-    <h2 id="title">Title Element</h2>
-    <h3>The title element defines the title of the document. It is required in all HTML documents.
+
+    <h2 id="title">Title Element</h2>   <div>
+      <h3>The title element defines the title of the document.
     <br><br>
     Location: Inside the &lt;head> tag.</h3>
-    <p>Metadata is code that isn't explicitly displayed. It will alter your web page but the only way to really see the code itself is to view the page's source code. Examples of metadata include the web page title, styles, links, and scripts.</p>
-    <h3>Syntax</h3>
+    <p>It is required in all HTML documents. </p>
+    <h3 id="syn">Syntax</h3>
     <p>&lt;title>[doc tootle!]&lt;/title></p>
-    <h3>Example</h3>
+    <h3 id="ex">Example</h3>
     <p><img src="/images/TitleExample-Display.png"></p>
-    <h3>Display</h3>
+    <h3 id="dis">Display</h3>
     <p>See "Example."</p>
-    <h3><a href=https://www.w3schools.com/tags/tag_title.asp>W3 Schools Link</a></h3>
-    <hr>
+    <h4><a href=https://www.w3schools.com/tags/tag_title.asp>W3 Schools Link</a></h4>
+    <br><br>
+    </div>
     
-    <h2 id="body">Body Element</h2>
+
+    <h2 id="body">Body Element</h2>  <div>
     <h3>The body element defines the body of the document. There is only one body per HTML page.
     <br><br>
     Location: Right after the &lt;/head> tag.</h3>
     <p>It contains all of the visible elements of a HTML web page. Components you can add in the body include hyperlinks, text/paragraphs, tables, lists, pictures, etc.</p>
-    <h3>Syntax</h3>
+    <h3 id="syn">Syntax</h3>
     <p>&lt;body>[stufff!]&lt;/body></p>
-    <h3>Example</h3>
+    <h3 id="ex">Example</h3>
     <p><img src="/images/BodyExample.png"></p>
-    <h3>Display</h3>
+    <h3 id="dis">Display</h3>
     <p><img src="/images/BodyDisplay.png"></p>
-    <h3><a href=https://www.w3schools.com/tags/tag_body.asp>W3 Schools Link</a></h3>
-    <hr>
+    <h4><a href=https://www.w3schools.com/tags/tag_body.asp>W3 Schools Link</a></h4>
+    <br><br>
+  </div>
     
-    <h2 id="headings">Headings Element</h2>
+
+    <h2 id="headings">Headings Element</h2>    <div>
     <h3>The headings element are used by search engines to index the structure/content of your web page and users will often skim over your web page by looking at the headings.
     <br><br>
     Location: Anywhere you want after the &lt;body> tag. Does not have to come after &lt;p>.</h3>
     <p>Headings are defined by h&lt;1> through &lt;6>. The most important heading should be h&lt;1>, followed by &lt;2>, and so forth.</p>
-    <h3>Syntax</h3>
+    <h3 id="syn">Syntax</h3>
     <p>&lt;h(#)>[yor headoings!]&lt;/h(#)></p>
-    <h3>Example</h3>
+    <h3 id="ex">Example</h3>
     <p><img src="/images/HeadingsExample.png"></p>
-    <h3>Display</h3>
+    <h3 id="dis">Display</h3>
     <p><img src="/images/HeadingsDisplay.png"></p>
-    <h3><a href=https://www.w3schools.com/html/html_headings.asp>W3 Schools Link</a></h3>
-    <hr>
+    <h4><a href=https://www.w3schools.com/html/html_headings.asp>W3 Schools Link</a></h4>
+    <br><br>
+  </div>
     
-    <h2 id="paragraph">Paragraph Element</h2>
+
+    <h2 id="paragraph">Paragraph Element</h2>  <div>
     <h3>The paragraph element is used to show words.
     <br><br>
     Location: Anywhere you want after the &lt;body> tag.</h3>
     <p>Basically just used to write things. Extra spaces in between lines will be ignored.</p>
-    <h3>Syntax</h3>
+    <h3 id="syn">Syntax</h3>
     <p>&lt;p>[werds!]&lt;/p></p>
-    <h3>Example</h3>
+    <h3 id="ex">Example</h3>
     <p><img src="/images/ParagraphExample.png"></p>
-    <h3>Display</h3>
+    <h3 id="dis">Display</h3>
     <p><img src="/images/ParagraphDisplay.png"></p>
-    <h3><a href=https://www.w3schools.com/html/html_paragraphs.asp>W3 Schools Link</a></h3>
-    <hr>
+    <h4><a href=https://www.w3schools.com/html/html_paragraphs.asp>W3 Schools Link</a></h4>
+    <br><br>
+  </div>
     
-    <h2 id="break">Break Element</h2>
+
+    <h2 id="break">Break Element</h2>  <div>
     <h3>The head element is a container for metadata (data about data).
     <br><br>
     Location: Between the &lt;html> and &lt;body> tags.</h3>
     <p>Metadata is code that isn't explicitly displayed. It will alter your web page but the only way to really see the code itself is to view the page's source code. Examples of metadata include the web page title, styles, links, and scripts.</p>
-    <h3>Syntax</h3>
+    <h3 id="syn">Syntax</h3>
     <p>&lt;br></p>
-    <h3>Example</h3>
+    <h3 id="ex">Example</h3>
     <p><img src="/images/BreakExample.png"></p>
-    <h3>Display</h3>
+    <h3 id="dis">Display</h3>
     <p><img src="/images/BreakDisplay.png"></p>
-    <h3><a href=https://www.w3schools.com/tags/tag_br.asp>W3 Schools Link</a></h3>
-    <hr>
+    <h4><a href=https://www.w3schools.com/tags/tag_br.asp>W3 Schools Link</a></h4>
+    <br><br>
+  </div>
     
-    <h2 id="line">Line Element</h2>
+
+    <h2 id="line">Line Element</h2>  <div>
     <h3>The line element defines a break in a HTML page.
     <br><br>
     Location: Anywhere after the &lt;body> tag.</h3>
     <p>It basically draws a line across your web page and usually signifies a thematic change/a change in topics. You can use it to separate content.</p>
-    <h3>Syntax</h3>
+    <h3 id="syn">Syntax</h3>
     <p>&lt;hr></p>
-    <h3>Example</h3>
+    <h3 id="ex">Example</h3>
     <p><img src="/images/LineExample.png"></p>
-    <h3>Display</h3>
+    <h3 id="dis">Display</h3>
     <p><img src="/images/LineDisplay.png"></p>
-    <h3><a href=https://www.w3schools.com/tags/tag_hr.asp>W3 Schools Link</a></h3>
-    <hr>
+    <h4><a href=https://www.w3schools.com/tags/tag_hr.asp>W3 Schools Link</a></h4>
+    <br><br>
+  </div>
     
-    <h2 id="comment">Comment Element</h2>
+
+    <h2 id="comment">Comment Element</h2>  <div>
     <h3>The comment element is used to insert whatever you want in a source code without it affecting the display of the web page.
     <br><br>
     Location: (?) Most likely anywhere after the &lt;html> tag.</h3>
     <p>Comments are great for reminders and notifications/signals. They are not visible unless you view the source code. They are also useful for when you're trying to debug HTML.</p>
-    <h3>Syntax</h3>
+    <h3 id="syn">Syntax</h3>
     <p>&lt;!--[snarkee commont!]--></p>
-    <h3>Example</h3>
+    <h3 id="ex">Example</h3>
     <p><img src="/images/CommentExample.png"></p>
-    <h3>Display</h3>
+    <h3 id="dis">Display</h3>
     <p><img src="/images/CommentDisplay.png"></p>
-    <h3><a href=https://www.w3schools.com/html/html_comments.asp>W3 Schools Link</a></h3>
-    <hr>
+    <h4><a href=https://www.w3schools.com/html/html_comments.asp>W3 Schools Link</a></h4>
+    <br><br>
+  </div>
     
-    <h2 id="hyperlink">Hyperlink Element</h2>
+
+    <h2 id="hyperlink">Hyperlink Element</h2>  <div>
     <h3>The hyperlink element allows users to jump from one document/page to another.
     <br><br>
     Location: Anywhere after the &lt;body> tag.</h3>
     <p>Though more commonly known as links, these are called hyperlinks and are not to be confused with the link tag in the head element.</p>
-    <h3>Syntax</h3>
+    <h3 id="syn">Syntax</h3>
     <p>&lt;a href=[leenk!]>[leenk namee! but! is opshunel. if noh leenk namee, actual leenk well shoe upp]&lt;/a></p>
-    <h3>Example</h3>
+    <h3 id="ex">Example</h3>
     <p><img src="/images/HyperlinkExample.png"></p>
-    <h3>Display</h3>
+    <h3 id="dis">Display</h3>
     <p><img src="/images/HyperlinkDisplay.png"></p>
-    <h3><a href=https://www.w3schools.com/html/html_links.asp>W3 Schools Link</a></h3>
-    <hr>
+    <h4><a href=https://www.w3schools.com/html/html_links.asp>W3 Schools Link</a></h4>
+    <br><br>
+  </div>
     
-    <h2 id="image">Image Element</h2>
+
+    <h2 id="image">Image Element</h2>  <div>
     <h3>The image element displays images locally or from anywhere on the web (assuming the image exists).
     <br><br>
     Location: Anywhere after the &lt;body> tag but can go after a paragraph tag.</h3>
     <p>With the image tag, you can display images either from a file or directly from the web.</p>
-    <h3>Syntax</h3>
+    <h3 id="syn">Syntax</h3>
     <p>&lt;img src="[leenk toh imagee!]"></p>
-    <h3>Example</h3>
+    <h3 id="ex">Example</h3>
     <p>*This example is from a local file so it is not derived from a link.</p>
     <p><img src="/images/ImageExample.png"></p>
-    <h3>Display</h3>
+    <h3 id="dis">Display</h3>
     <p><img src="/images/ImageDisplay.png"></p>
-    <h3><a href=https://www.w3schools.com/html/html_images.asp>W3 Schools Link</a></h3>
-    <hr>
+    <h4><a href=https://www.w3schools.com/html/html_images.asp>W3 Schools Link</a></h4>
+    <br><br>
+  </div>
     
-    <h2 id="list">List Element</h2>
+
+    <h2 id="list">List Element</h2>  <div>
     <h3>The list element allows you to create either a numbered list or a bullet list.
     <br><br>
     Location: Anywhere after the &lt;body> tag.</h3>
     <p>Lists are used to list or number items in any order you want. ol is an ordered list, which means it is numbered. ul is an unordered list, which means it is a bullet list.</p>
-    <h3>Syntax</h3>
+    <h3 id="syn">Syntax</h3>
     <p>&lt;u/ol>&lt;li>[leest iteem namee, add as many as yoo want]&lt;/li>&lt;/u/ol></p>
-    <h3>Example</h3>
+    <h3 id="ex">Example</h3>
     <p><img src="/images/ListExample.PNG"></p>
-    <h3>Display</h3>
+    <h3 id="dis">Display</h3>
     <p><img src="/images/ListDisplay.PNG"></p>
-    <h3><a href=https://www.w3schools.com/html/html_lists.asp>W3 Schools Link</a></h3>
-    <hr>
+    <h4><a href=https://www.w3schools.com/html/html_lists.asp>W3 Schools Link</a></h4>
+    <br><br>
+  </div>
     
-    <h2 id="table">Table Element</h2>
+
+    <h2 id="table">Table Element</h2>  <div>
     <h3>The table tag defines a HTML table. Each table row is defined with a &lt;tr> tag. A table header is defined with a &lt;th> tag. A table data/cell is defined with a &lt;td> tag.
     <br><br>
     Location: Anywhere after the &lt;body> tag.</h3>
     <p>Table headings are bold and centered. The &lt;td> tags contain the data in the table. You can add all sorts of things in it, like images, lists, and more tables (table-ception!1!!).</p>
-    <h3>Syntax</h3>
+    <h3 id="syn">Syntax</h3>
     <p>&lt;table>&lt;tr>&lt;th>[da things runnin acroos the top of da tooble dat designate the columns, add as many as you like, ending the tag for each column]&lt;/th>&lt;/tr>&lt;tr>&lt;td>[the stuff in the table that will go in the first row, add as many as you like, each new tag added is the next row after the previous]&lt;/td>&lt;/tr>&lt;/table>&lt;/a></p>
-    <h3>Example</h3>
+    <h3 id="ex">Example</h3>
     <p><img src="/images/TableExample.PNG"></p>
-    <h3>Display</h3>
+    <h3 id="dis">Display</h3>
     <p><img src="/images/TableDisplay.PNG"></p>
-    <h3><a href=https://www.w3schools.com/tags/tag_table.asp>W3 Schools Link</a></h3>
-    <hr>
+    <h4><a href=https://www.w3schools.com/tags/tag_table.asp>W3 Schools Link</a></h4>
+    <br><br>
+  </div>
     
-    <h2 id="block">Block Element</h2>
+
+    <h2 id="block">Block Element</h2>  <div>
     <h3>The block element defines a division or section in an HTML doc. It is used to isolate a section of code from another.
     <br><br>
     Location: Anywhere after the &lt;body> tag.</h3>
     <p>Inside the block element, you can customise a certain section without affecting the rest of the web page. You can use it to group a bunch of text together and format it all at once.</p>
-    <h3>Syntax</h3>
+    <h3 id="syn">Syntax</h3>
     <p>&lt;div>[whatever code]&lt;/div></p>
-    <h3>Example</h3>
+    <h3 id="ex">Example</h3>
     <p><img src="/images/BlockExample.PNG"></p>
-    <h3>Display</h3>
+    <h3 id="dis">Display</h3>
     <p><img src="/images/BlockDisplay.PNG"></p>
-    <h3><a href=https://www.w3schools.com/html/html_blocks.asp>W3 Schools Link</a></h3>
-    <hr>
+    <h4><a href=https://www.w3schools.com/html/html_blocks.asp>W3 Schools Link</a></h4>
+  </div>
 
   </body>
 </html>
