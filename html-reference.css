@@ -1,183 +1,91 @@
-
-
 body {
-
- 
-font-family:Trebuchet MS, Times New Roman;
-
+  font-family:Trebuchet MS, Times New Roman;
 }
-
- 
 
 .center {
-
-  text-align:center;
-
+  text-align:center;
 }
-
- 
 
 .navtable {
-
- 
-border-collapse:collapse;
-
+  border-collapse:collapse;
 }
-
- 
 
 .navtable td, .navtable th {
-  border: 1px solid lightgray;
-  padding:8px;
+  border: 1px solid lightgray;
+  padding:8px;
 }
-
- 
 
 .navtable th {
-  color: white ;
-  background-color:#696b70;
-
+  color: white ;
+  background-color: #696b70;
 }
-
- 
 
 .navtable tr:nth-child(even) {
-  background-color: #F5F5F5;
-
+  background-color: #F5F5F5;
 }
-
- 
 
 .navtable tr {
-  color: #000000;
-  text-align: center;
+  color: #000000;
+  text-align: center;
 }
-
- 
 
 .navtable tr:hover {
-background-color:#dbdbdb;
+  background-color:#dbdbdb;
 }
 
- 
-
-a:hover   {
-  /* Links under the
-pointer */
-text-decoration:  underline;
-  color:#89afc6;
-
-  } 
-
- 
+a:hover   {
+  /* Links under the pointer */
+  text-decoration:  underline;
+  color:            #89afc6;
+  } 
 
 h2 {
-
-  color: white;
-  border-left: 6px
-solid black;
-
-  background-color:
-#9b9b9b;
-
-  padding: 8px;
-
-  width: 30%;
-
-  text-align: center;
-
+  color: white;
+  border-left: 6px solid black;
+  background-color: #9b9b9b;
+  padding: 8px;
+  width: 30%;
+  text-align: center;
 }
-
- 
 
 h3 {
-
-  background-color:
-#e5e5e5;
-
-  padding: 10px;
-
-  width: 60%;
-
+  background-color: #e5e5e5;
+  padding: 10px;
+  width: 60%;
 }
-
- 
 
 div {
-
-  position: relative;
-
-  left: 50px;
-
-  border-left: 4px
-solid gray;
-
-  padding: 6px;
-
+  position: relative;
+  left: 50px;
+  border-left: 4px solid gray;
+  padding: 6px;
 }
-
- 
 
 p {
-
-  text-indent: 40px;
-
+  text-indent: 40px;
 }
-
- 
 
 #syn, #ex, #dis {
-
-  width: 10%;
-
-  text-align: center;
-
-  background-color:
-#f2f2f2;
-
+  width: 10%;
+  text-align: center;
+  background-color: #f2f2f2;
 }
-
- 
 
 #titleimg {
-
-   background:
-linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),
-url("https://goo.gl/gWuodF");
-
+   background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("https://goo.gl/gWuodF");
 background-size: cover;
-
-  padding: 40px;
-
-  color:white;
-
+  padding: 40px;
+  color:white;
 }
 
- 
-
-a:link    {
-
-  /* Applies to all
-unvisited links */
-
- 
-text-decoration:  none;
-
-  font-weight:      bold;
-
-  color:            #3D3D3D;
-
-  } 
-
+a:link    {
+  /* Applies to all unvisited links */
+  text-decoration:  none;
+  font-weight:      bold;
+  color:            #3D3D3D;
+} 
 a:visited {
-
-  /* Applies to all
-visited links */
-
- 
-text-decoration:  none;
-
-  color:            black;
-
-  } 
+  /* Applies to all visited links */
+  text-decoration:  none;
+} 
 
