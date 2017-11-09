@@ -163,7 +163,13 @@
     Location: Between the &lt;html> and &lt;body> tags.</h3>
     <p>Metadata is code that isn't explicitly displayed. 
     <br>It will alter your web page but the only way to really see the code itself is to view the page's source code. 
-    <br>Examples of metadata include the web page title, styles, links, and scripts.</p>
+    <br>Examples of metadata include (but are not limited to):</p>
+    <ul>
+      <li>the web page title</li> 
+      <li>styles</li>
+      <li>links</li>
+      <li>scripts</li>
+    </ul>
     <h3 id="syn">Syntax</h3>
     <p class="syn">&lt;head>[moitadoita!]&lt;/head></p>
     <h3 id="ex">Example</h3>
@@ -240,10 +246,18 @@
     
 
     <h2 id="break">Break Element</h2>  <div>
-    <h3>The head element is a container for metadata (data about data).
+    <h3>The break element acts as the "enter"/new line key in a (ex. MS Word) document.
     <br><br>
-    Location: Between the &lt;html> and &lt;body> tags.</h3>
-    <p>Metadata is code that isn't explicitly displayed. It will alter your web page but the only way to really see the code itself is to view the page's source code. Examples of metadata include the web page title, styles, links, and scripts.</p>
+    Location: Anywhere after &lt;body></h3>
+    <p>In HTML, computers ignore extra lines in the source code. 
+    <br>
+    You can add all sorts of lines in the code but none of them will show up in the actual page. 
+    <br>
+    That's where the break element comes in.
+    <br>
+    The break element will add a line to separate two paragraphs or other elements. You can add as many as you like and the computer will acknowledge them all.
+    <br>
+    The break element does not require an end tag.</p>
     <h3 id="syn">Syntax</h3>
     <p class="syn">&lt;br></p>
     <h3 id="ex">Example</h3>
@@ -275,7 +289,9 @@
     <h3>The comment element is used to insert whatever you want in a source code without it affecting the display of the web page.
     <br><br>
     Location: (?) Most likely anywhere after the &lt;html> tag.</h3>
-    <p>Comments are great for reminders and notifications/signals. They are not visible unless you view the source code. They are also useful for when you're trying to debug HTML.</p>
+    <p>Comments are great for reminders and notifications/signals. They are not visible unless you view the source code. 
+    <br>
+    Comments are also useful for when you're trying to debug HTML.</p>
     <h3 id="syn">Syntax</h3>
     <p class="syn">&lt;!--[snarkee commont!]--></p>
     <h3 id="ex">Example</h3>
@@ -340,9 +356,26 @@
     <h3>The table tag defines a HTML table. Each table row is defined with a &lt;tr> tag. A table header is defined with a &lt;th> tag. A table data/cell is defined with a &lt;td> tag.
     <br><br>
     Location: Anywhere after the &lt;body> tag.</h3>
-    <p>Table headings are bold and centered. The &lt;td> tags contain the data in the table. You can add all sorts of things in it, like images, lists, and more tables (table-ception!1!!).</p>
+    <p>Table headings are bold and centered. The &lt;td> tags contain the data in the table. 
+    <br>
+    You can add all sorts of things in it, like images, lists, and more tables (table-ception!1!!).</p>
     <h3 id="syn">Syntax</h3>
-    <p class="syn">&lt;table>&lt;tr>&lt;th>[da things runnin acroos the top of da tooble dat designate the columns, add as many as you like, ending the tag for each column]&lt;/th>&lt;/tr>&lt;tr>&lt;td>[the stuff in the table that will go in the first row, add as many as you like, each new tag added is the next row after the previous]&lt;/td>&lt;/tr>&lt;/table>&lt;/a></p>
+    <p class="syn">&lt;table>
+    <br>
+    &lt;tr>
+    <br>
+    &lt;th>
+    <br>[da things runnin acroos the top of da tooble dat designate the columns, add as many as you like, ending the tag for each column]
+    <br>
+    &lt;/th>
+    <br>
+    &lt;/tr>
+    <br>
+    &lt;tr>&lt;td>
+    <br>[the stuff in the table that will go in the first row, add as many as you like, each new tag added is the next row after the previous]
+    <br>&lt;/td>
+    <br>&lt;/tr>
+    <br>&lt;/table></p>
     <h3 id="ex">Example</h3>
     <p><img src="/images/TableExample.PNG"></p>
     <h3 id="dis">Display</h3>
@@ -356,7 +389,9 @@
     <h3>The block element defines a division or section in an HTML doc. It is used to isolate a section of code from another.
     <br><br>
     Location: Anywhere after the &lt;body> tag.</h3>
-    <p>Inside the block element, you can customise a certain section without affecting the rest of the web page. You can use it to group a bunch of text together and format it all at once.</p>
+    <p>Inside the block element, you can customise a certain section without affecting the rest of the web page. 
+    <br>
+    You can use it to group a bunch of text together and format it all at once.</p>
     <h3 id="syn">Syntax</h3>
     <p class="syn">&lt;div>[whatever code]&lt;/div></p>
     <h3 id="ex">Example</h3>
