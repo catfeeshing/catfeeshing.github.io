@@ -27,64 +27,45 @@ border-collapse:collapse;
  
 
 .navtable td, .navtable th {
-
-  border: 1px solid
-lightgray;
-
+  border: 1px solid lightgray;
   padding:8px;
-
 }
 
  
 
 .navtable th {
-
   color: white ;
-
-  background-color:
-#696b70;
+  background-color:#696b70;
 
 }
 
  
 
 .navtable tr:nth-child(even) {
-
-  background-color:
-#F5F5F5;
+  background-color: #F5F5F5;
 
 }
 
  
 
 .navtable tr {
-
   color: #000000;
-
   text-align: center;
-
 }
 
  
 
 .navtable tr:hover {
-
- 
 background-color:#dbdbdb;
-
 }
 
  
 
 a:hover   {
-
   /* Links under the
 pointer */
-
- 
 text-decoration:  underline;
-
-  color:            #89afc6;
+  color:#89afc6;
 
   } 
 
@@ -93,7 +74,6 @@ text-decoration:  underline;
 h2 {
 
   color: white;
-
   border-left: 6px
 solid black;
 
