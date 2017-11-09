@@ -34,7 +34,6 @@ body {
 }
 
 a:hover   {
-  /* Links under the pointer */
   text-decoration:  underline;
   color:            #89afc6;
   } 
@@ -79,13 +78,14 @@ background-size: cover;
 }
 
 a:link    {
-  /* Applies to all unvisited links */
   text-decoration:  none;
   font-weight:      bold;
   color:            #3D3D3D;
 } 
 a:visited {
-  /* Applies to all visited links */
   text-decoration:  none;
 } 
 
+.syn {
+  color: gray;
+}
