@@ -75,6 +75,7 @@ p {
 background-size: cover;
   padding: 40px;
   color:white;
+  border: 10px solid black;
 }
 
 a:link    {
@@ -95,4 +96,5 @@ a:visited {
 background-size: cover;
   padding: 40px;
   color:white;
+  border: 10px solid black;
 }
