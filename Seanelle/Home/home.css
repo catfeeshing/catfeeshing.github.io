@@ -1,0 +1,7 @@
+body {  font-family: Trebuchet MS;  background-color: #F9F7ED;}
+.navbar ul{    list-style-type: none;    margin: 0;    padding: 0;    overflow: hidden;    background-color: #ffa8bd;}
+.navbar li {  float: left;}
+.navbar li a {    display: block;    color: white;    text-align: center;    padding: 14px 16px;    text-decoration: none;}
+.navbar li a:hover {  background-color: #ff6086;}
+.active {  background-color: #ff82a0;}
+hr {  border-color: red;}
