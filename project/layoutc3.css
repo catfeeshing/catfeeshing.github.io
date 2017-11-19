@@ -1,28 +1,158 @@
-* {    box-sizing: border-box;}
-body {  margin: 0;  font-family: "Segoe UI", Trebuchet MS;}
-/* Style the header */.header {    background-color: #ffffff;    padding: 20px;    text-align: center;}
-/* Style the top navigation bar */.topnav {    overflow: hidden;    background-color: #333;}
-/* Style the topnav links */.topnav a {    float: left;    display: block;    color: #ffffff;    text-align: center;    padding: 14px 16px;    text-decoration: none;}
-/* Change color on hover */.topnav a:hover:not(.active) {    background-color: #ddd;    color: black;}
-/* indicate active page on nav */.active {    background-color: #bc0000;}
-/* A - Create three unequal columns that floats next to each other */.column {    float: left;    padding: 10px;}
-/* Left and right column */.column.side {    width: 25%;}
-/* Middle column */.column.middle {    width: 50%;}
-.cm2 {  width:100%;  padding: 10px;}
-/* Clear floats after the columns */.row:after {    content: "";    display: table;    clear: both;}
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */@media (max-width: 600px) {    .column.side, .column.middle {        width: 100%;    }    .homeside {        height: 500px;    }}
-/* Style the footer */.footer {    background-color: #333;    padding: 10px;    text-align: center;    color: lightgray;    text-indent: 0px;}
-p {  text-indent: 40px;}
-#hp1 {  text-align: center;  font-size:20px;  font-family:Courier New;  text-indent: 0px;}
-a {  color: gray;}
-a:hover {  color: black;}
+* {
+    box-sizing: border-box;
+}
 
-/*Plan Table*/.plantable {  border-collapse:collapse;  text-align: center;}
-.plantable td, .plantable th {  padding:8px;  border: 1px solid lightgray;}
-.plantable th {  color: white ;  background-color: #696b70;}
-.plantable tr:nth-child(even) {  background-color: #F5F5F5;}
-.plantable tr {  color: #000000;  text-align: center;}
-.plantable tr:hover {  background-color:#dbdbdb;}/*End Plan Table*/
-.homeside {  background-color: lightgray;  width: 25%;  height: 1475px;}
-body {  background-image: url(https://www.sakawater.com.au/wp-content/uploads/2015/04/geometic-bg-white-2.jpg);}
-ul {  background-color: gray;  color: white;  padding: 10px;  border: 1px black;}
+body {
+  margin: 0;
+  font-family: "Segoe UI", Trebuchet MS;
+}
+
+/* Style the header */
+.header {
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+    float: left;
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover:not(.active) {
+    background-color: #ddd;
+    color: black;
+}
+
+/* indicate active page on nav */
+.active {
+    background-color: #bc0000;
+}
+
+/* A - Create three unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+}
+
+/* Left and right column */
+.column.side {
+    width: 25%;
+}
+
+/* Middle column */
+.column.middle {
+    width: 50%;
+}
+
+.cm2 {
+  width:100%;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .column.side, .column.middle {
+        width: 100%;
+    }
+    .homeside {
+        height: 500px;
+    }
+}
+
+/* Style the footer */
+.footer {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+    color: lightgray;
+    text-indent: 0px;
+}
+
+p {
+  text-indent: 40px;
+}
+
+#hp1 {
+  text-align: center;
+  font-size:20px;
+  font-family:Courier New;
+  text-indent: 0px;
+}
+
+a {
+  color: gray;
+}
+
+a:hover {
+  color: black;
+}
+
+
+
+/*Plan Table*/
+.plantable {
+  border-collapse:collapse;
+  text-align: center;
+}
+
+.plantable td, .plantable th {
+  padding:8px;
+  border: 1px solid lightgray;
+}
+
+.plantable th {
+  color: white ;
+  background-color: #696b70;
+}
+
+.plantable tr:nth-child(even) {
+  background-color: #F5F5F5;
+}
+
+.plantable tr {
+  color: #000000;
+  text-align: center;
+}
+
+.plantable tr:hover {
+  background-color:#dbdbdb;
+}
+/*End Plan Table*/
+
+.homeside {
+  background-color: lightgray;
+  width: 25%;
+  height: 1475px;
+}
+
+body {
+  background-image: url(https://www.sakawater.com.au/wp-content/uploads/2015/04/geometic-bg-white-2.jpg);
+}
+
+
+ul {
+  background-color: gray;
+  color: white;
+  padding: 10px;
+  border: 1px black;
+}
