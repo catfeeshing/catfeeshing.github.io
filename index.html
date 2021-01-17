@@ -1,39 +1,271 @@
 <!DOCTYPE html>
-    <html>
-        <head>
-	        <title>portfolio.</title>
-	        <link rel="icon" href="/images/favicon.png">
-	    </head>
-	
-        <body>
-	        <h1>Welcome!</h1>
-	        <p>Below, you can find a list of some projects I'm currently working on or have worked on before, as well as work from any CS classes I've taken.</p>
-	        <hr>
-	        <p style = "font-family: "Open Sans", times, sans-serif>Web Pages</p>
-	        <ul style="list-style-type:square">
-                <li><a href="/ecs/index.html">ECS Documentation</a></i>
-                <li><a href="https://instagram.com/miraigameproject" target="_blank">Mirai Project</a></li>
-                <li><a href="https://ourthreeseas.wordpress.com" target="_blank">Our Three Seas Blog</a></li>
-                <li>Coming soon: media portfolio.</li>
-            </ul>
+<html>
+<title>blurry photography</title>
+<meta charset="UTF-8">
 
-    <!-- modify this form HTML and place wherever you want your form -->
-        <form
-            action="https://formspree.io/f/xzbkjkob"
-            method="POST"
-            enctype="multipart/form-data"
-        >
-        <label>
-            Your email:
-            <input type="text" name="_replyto">
-        </label>
-        <label>
-            Your file:
-        <input type="file" name="upload">
-        </label>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<head>
+	<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.min.css">
+	<script src="https://code.jquery.com/jquery-1.10.2.min.js">
+
+	</script>
+	<script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js">
+
+	</script>
+	<script type="text/javascript">
+		//Call the method on pageload
+    $(window).load(function(){
+      //Disply the modal popup
+        $('#hello').modal('show');
+    });
+	</script>
+</head>
+
+<style>
+	body,
+	h1 {
+		font-family: "Raleway", sans-serif
+	}
+
+	img {
+		margin-bottom: -7px
+	}
+
+	.w3-row-padding img {
+		margin-bottom: 12px
+	}
+
+	#ralewaygang {
+		font-family: "Raleway", sans-serif
+	}
+</style>
+
+<body>
+
+	<div class="modal fade" id="hello" tabindex="-1" role="dialog" aria-labelledby="helloLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<!--<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title" id="helloLabel">Modal title Here</h4>
+        </div>-->
+        <div class="modal-body" id="ralewaygang">
+          hello, welcome to my portfolio!
+          <br>
+          <br>
+          I'm currently revamping my website. Most of my photos, graphics, and artwork have not been migrated, but some examples can be found in my corresponding GitHub Pages repository. More content will definitely be added shortly! Sorry for the inconvenience <3
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-black w3-animate-top w3-xxlarge" style="display:none;padding-top:150px" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-black w3-xxlarge w3-padding w3-display-topright" style="padding:6px 24px">
+    <i class="fa fa-remove"></i>
+  </a>
+  <div class="w3-bar-block w3-center">
+    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="w3_close()">About</a>
+    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="w3_close()">Photos</a>
+    <a href="#projects" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="w3_close()">Projects</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="w3_close()">Contact</a>
+  </div>
+</nav>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-content" style="max-width:1500px">
+
+<!-- Header -->
+<div class="w3-opacity">
+<span class="w3-button w3-xxlarge w3-white w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></span> 
+<div class="w3-clear"></div>
+<header class="w3-center w3-margin-bottom">
+  <h1><b>blurry photography</b></h1>
+  <p><b>the misadventures of a sleep-deprived teen</b></p>
+  <p class="w3-padding-16"><button class="w3-button w3-black" onclick="myFunction()">Toggle Grid Padding</button></p>
+</header>
+</div>
+
+<!-- Photo Grid -->
+<div class="w3-row" id="myGrid" style="margin-bottom:128px">
+  <div class="w3-third">
+    <img src="/w3images/rocks.jpg" style="width:100%">
+    <img src="/w3images/sound.jpg" style="width:100%">
+    <img src="/w3images/woods.jpg" style="width:100%">
+    <img src="/w3images/rock.jpg" style="width:100%">
+    <img src="/w3images/nature.jpg" style="width:100%">
+    <img src="/w3images/mist.jpg" style="width:100%">
+  </div>
+
+  <div class="w3-third">
+    <img src="/w3images/coffee.jpg" style="width:100%">
+    <img src="/w3images/bridge.jpg" style="width:100%">
+    <img src="/w3images/notebook.jpg" style="width:100%">
+    <img src="/w3images/london.jpg" style="width:100%">
+    <img src="/w3images/rocks.jpg" style="width:100%">
+    <img src="/w3images/avatar_g.jpg" style="width:100%">
+  </div>
+
+  <div class="w3-third">
+    <img src="/w3images/mist.jpg" style="width:100%">
+    <img src="/w3images/workbench.jpg" style="width:100%">
+    <img src="/w3images/gondol.jpg" style="width:100%">
+    <img src="/w3images/skies.jpg" style="width:100%">
+    <img src="/w3images/lights.jpg" style="width:100%">
+    <img src="/w3images/workshop.jpg" style="width:100%">
+  </div>
+</div>
+<!-- End photo grid -->
+</div>
+<br><br>
+<div class="w3-container w3-light-grey w3-center w3-padding-32">
+</div>
+<br><br>
+<div class="w3-row-padding" style="padding-right: 64px; padding-left: 64px;" id="projects">
+        <div class="w3-center">
+          <b><h3>Projects and Sites</h3></b>
+        </div>
+        <div class="w3-text-dark-grey">
+        <ul class="w3-ul">
+          <li class="w3-padding-16 w3-hover-light-gray">
+            <span class="w3-large"><b><a href="ourthreeseas.wordpress.com" target="_blank">Our Three Seas Blog</a></b></span><br>
+            <span>Your typical internet blog by my friend and yours truly.</span>
+          </li>
+          <li class="w3-padding-16 w3-hover-light-gray">
+            <span class="w3-large"><b><a href="https://instagram.com/miraigameproject" target="_blank">Mirai Project</a></b></span><br>
+            <span>Mirai is a 2D anime-styled virtual multiplayer game in development, set in a futuristic and fantasy world.</span>
+          </li> 
+          <li class="w3-padding-16 w3-hover-light-gray">
+            <span class="w3-large"><b>My GitHub and Repls</b></span><br>
+            <span>
+              <a href="https://github.com/catfeeshing/" target="_blank">my github</a>
+              <br>
+              - mostly consists of work from my cs classes (exciting stuff, I know)
+              <br>
+              <a href="https://repl.it/@CarolynC" target="_blank">repl.it</a>
+              <br>
+              - testing grounds for my projects and websites 😳
+            </span>
+          </li>
+          <li class="w3-padding-16 w3-hover-light-gray">
+            <span class="w3-large">
+              <a href="team3128.org" target="_blank"><b>Team 3128</b></a></span><br>
+            <span>
+              <a href="frc3128.smugmug.com" target="_blank">Team 3128 Smugmug</a>
+              <br>
+              - A lot more of my photography can be found here! I did all of last year's build season coverage and most of the 2020 DMR coverage. The preseason photos are also mostly mine at the moment.
+            </span>
+          </li>
+          <li class="w3-padding-16 w3-hover-light-gray">
+            <span class="w3-large"><b>Workbk</b></span>
+            <br>
+            <span>
+              Supplementary online worksheets for elementary schoolers in math, English, and computer science! Sorry, I'm currently revamping the website :( (it is a bit of a mess)
+        </ul>
+        </div>
+      </div>
+    </div>
+
+    <br><br>
+
+<div class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-32" id="about">
+    <h4><b>about</b></h4>
+    <img src="/media/photos/general/it me.PNG" alt="moi" class="w3-image w3-padding-32" width="70%" height="70%">
+    <div class="w3-content w3-justify" style="max-width:600px">
+      <p>
+        hi! my name is carolyn cui, and you've found my portfolio :0
+        <br>
+        <br>
+        I'm currently a senior at canyon crest academy in san diego, california (class of 21 gang!). herein lies the work of a self-taught photographer, writer, graphic designer, and wannabe programmer; you can find the best of my photos, artwork, and other projects on this website. 
+      </p>
+      <hr class="w3-opacity">
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact section -->
+  <div class="w3-container w3-light-grey w3-padding-32 w3-padding-large" id="contact">
+    <div class="w3-content" style="max-width:600px">
+      <h4 class="w3-center"><b>contact me</b></h4>
+      <p>
+        if you'd like to reach out, please fill out this form, and I'll respond as soon as I can. thank you <3
+        <br>
+        <br>
+        form hosted by <a href="https://formspree.io/" target="_blank">formspree</a>
+      </p>
+
+      <!-- modify this form HTML and place wherever you want your form -->
+
+      <form
+        action="https://formspree.io/f/xyybblnq"
+        method="POST"
+      >
+      
+        <div class="w3-section">
+          <label>Name</label>
+          <input class="w3-input w3-border" type="text" name="name" required>
+        </div>
+
+        <div class="w3-section">
+          <label>Email</label>
+          <input class="w3-input w3-border" type="text" name="_replyto" required>
+          </div>
+
+        <div class="w3-section">
+          <label>Message</label>
+          <input class="w3-input w3-border" type="text" name="Message" required>
+        </div>
+      
         <button type="submit">Send</button>
         </form>
+      
+    </div>
 
-        </body>
-    </html>
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin-top:128px"> 
+  <a href="https://www.facebook.com/carolync42/" target="_blank"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+  <a href="https://www.instagram.com/north.carolyna/" target="_blank"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+  <!--<i class="fa fa-snapchat w3-hover-opacity"></i>-->
+  <!--<i class="fa fa-pinterest-p w3-hover-opacity"></i>-->
+  <!--<i class="fa fa-twitter w3-hover-opacity"></i>-->
+  <!--<i class="fa fa-linkedin w3-hover-opacity"></i>-->
+  <p class="w3-medium">original templates by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a>
+  <br>
+  frankensteined together and customised by yours truly
+  </p>
+</footer>
+ 
+<script>
+// Toggle grid padding
+function myFunction() {
+  var x = document.getElementById("myGrid");
+  if (x.className === "w3-row") {
+    x.className = "w3-row-padding";
+  } else { 
+    x.className = x.className.replace("w3-row-padding", "w3-row");
+  }
+}
+
+// Open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.width = "100%";
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+</body>
+</html>
