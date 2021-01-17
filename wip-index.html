@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>blurry photography</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+.w3-third img{margin-bottom: -6px; opacity: 0.8; cursor: pointer}
+.w3-third img:hover{opacity: 1}
+</style>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-animate-left w3-text-grey w3-collapse w3-top w3-center" style="z-index:3;width:300px;font-weight:bold" id="mySidebar"><br>
+  <h3 class="w3-padding-64 w3-center"><b>blurry<br>photography</b></h3>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hide-large">CLOSE</a>
+
+  <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">PORTFOLIO</a> 
+
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT ME</a> 
+  
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding-16">
+  <span class="w3-left w3-padding">blurry photography</span>
+  <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Push down content on small screens --> 
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+  
+  <!-- Photo grid -->
+  <div class="w3-row">
+    <div class="w3-third">
+      <img src="/w3images/natureboy.jpg" style="width:100%" onclick="onClick(this)" alt="A boy surrounded by beautiful nature">
+      <img src="/w3images/girl_mountain.jpg" style="width:100%" onclick="onClick(this)" alt="What a beautiful scenery this sunset">
+      <img src="/w3images/girl.jpg" style="width:100%" onclick="onClick(this)" alt="The Beach. Me. Alone. Beautiful">
+    </div>
+
+    <div class="w3-third">
+      <img src="/w3images/boy.jpg" style="width:100%" onclick="onClick(this)" alt="Quiet day at the beach. Cold, but beautiful">
+      <img src="/w3images/man_bench.jpg" style="width:100%" onclick="onClick(this)" alt="Waiting for the bus in the desert">
+      <img src="/w3images/natureboy.jpg" style="width:100%" onclick="onClick(this)" alt="Nature again.. At its finest!">
+    </div>
+    
+    <div class="w3-third">
+      <img src="/w3images/girl.jpg" style="width:100%" onclick="onClick(this)" alt="Canoeing again">
+      <img src="/w3images/girl_train.jpg" style="width:100%" onclick="onClick(this)" alt="A girl, and a train passing">
+      <img src="/w3images/closegirl.jpg" style="width:100%" onclick="onClick(this)" alt="What a beautiful day!">
+    </div>
+  </div>
+
+  <!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+    </div>
+  </div>
+  
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- About section -->
+  <div class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-32" id="about">
+    <h4><b>about</b></h4>
+    <img src="/media/it me.PNG" alt="moi" class="w3-image w3-padding-32" width="600" height="650">
+    <div class="w3-content w3-justify" style="max-width:600px">
+      <h4>carolyn!</h4>
+      <p>
+        hi! my name is carolyn cui, and you've found my portfolio :0
+        <br>
+        <br>
+        I'm currently a senior at canyon crest academy in san diego, california (class of 21 gang!). herein lies the work of a self-taught photographer, writer, graphic designer, and wannabe programmer; you can find the best of my photos, artwork, and other projects on this website. 
+      </p>
+      <hr class="w3-opacity">
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact section -->
+  <div class="w3-container w3-light-grey w3-padding-32 w3-padding-large" id="contact">
+    <div class="w3-content" style="max-width:600px">
+      <h4 class="w3-center"><b>contact me</b></h4>
+      <p>
+        if you'd like to reach out, please fill out this form, and I'll respond as soon as I can. thank you <3
+        <br>
+        <br>
+        form hosted by <a href="https://formspree.io/" target="_blank">formspree</a>
+      </p>
+
+      <!-- modify this form HTML and place wherever you want your form -->
+
+      <form
+        action="https://formspree.io/f/xyybblnq"
+        method="POST"
+      >
+      
+        <div class="w3-section">
+          <label>Name</label>
+          <input class="w3-input w3-border" type="text" name="name" required>
+        </div>
+
+        <div class="w3-section">
+          <label>Email</label>
+          <input class="w3-input w3-border" type="text" name="_replyto" required>
+          </div>
+
+        <div class="w3-section">
+          <label>Message</label>
+          <input class="w3-input w3-border" type="text" name="Message" required>
+        </div>
+      
+        <button type="submit">Send</button>
+        </form>
+      
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-32 w3-grey">  
+    <div class="w3-row-padding">
+    
+        <b><h3>Projects and Sites</h3></b>
+        <ul class="w3-ul">
+          <li class="w3-padding-16 w3-hover-black">
+            <span class="w3-large"><b><a href="ourthreeseas.wordpress.com" target="_blank">Our Three Seas Blog</a></b></span><br>
+            <span>Your typical internet blog by my friend and yours truly.</span>
+          </li>
+          <li class="w3-padding-16 w3-hover-black">
+            <span class="w3-large"><b><a href="https://instagram.com/miraigameproject" target="_blank">Mirai Project</a></b></span><br>
+            <span>Mirai is a 2D anime-styled virtual multiplayer game in development, set in a futuristic and fantasy world.</span>
+          </li> 
+          <li class="w3-padding-16 w3-hover-black">
+            <span class="w3-large"><b>My GitHub and Repls</b></span><br>
+            <span>
+              <a href="https://github.com/catfeeshing/" target="_blank">my github</a>
+              <br>
+              - mostly consists of work from my cs classes (exciting stuff, I know)
+              <br>
+              <a href="https://repl.it/@CarolynC" target="_blank">repl.it</a>
+              <br>
+              - testing grounds for my projects and websites 😳
+            </span>
+          </li>
+          <li class="w3-padding-16 w3-hover-black">
+            <span class="w3-large">
+              <a href="team3128.org" target="_blank"><b>Team 3128</b></a></span><br>
+            <span>
+              <a href="frc3128.smugmug.com" target="_blank">Team 3128 Smugmug</a>
+              <br>
+              - A lot more of my photography can be found here! I did all of last year's build season coverage and most of the 2020 DMR coverage. The preseason photos are also mostly mine at the moment.
+            </span>
+          </li>
+          <li class="w3-padding-16 w3-hover-black">
+            <span class="w3-large"><b>Workbk</b></span>
+            <br>
+            <span>
+              Supplementary online worksheets for elementary schoolers in math, English, and computer science! Sorry, I'm currently revamping the website :( (it is a bit of a mess)
+        </ul>
+      </div>
+    </div>
+  </footer>
+  
+  <div class="w3-black w3-center w3-padding-24">original template by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a>
+  <br>
+  thank you!
+  </div>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+</script>
+
+
+</body>
+</html>
